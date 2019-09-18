@@ -9,10 +9,12 @@
 
 1. Executar os comandos
 
-  ```yarn init -y
+  ```
+  yarn init -y
 ```
 
-  ```yarn add express
+  ```
+  yarn add express
 ```
 
 2. Criar pasta e arquivos:
@@ -25,10 +27,12 @@
 
 3. Para executar:
  
-```node src/server.js
+```
+node src/server.js
 ```
 
  No browser:
 
-```http://localhost:3333
+```
+http://localhost:3333
 ```
