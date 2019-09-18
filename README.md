@@ -25,6 +25,7 @@
 
 3. Para executar:
  
+<<<<<<< HEAD
  ```
 node src/server.js
 ```
@@ -40,6 +41,10 @@ http://localhost:3333
 
   ```
   yarn add sucrase nodemon -D
+=======
+```
+node src/server.js
+>>>>>>> cc820761823bcaa873c6b935016fe618ff2bea1f
 ```
 2. Alterar a maneira do import
 
@@ -47,10 +52,15 @@ http://localhost:3333
   const routes = require('./routes'); 
 ```
 
+<<<<<<< HEAD
 se torna
 
   ```
   import routes from './routes';
+=======
+```
+http://localhost:3333
+>>>>>>> cc820761823bcaa873c6b935016fe618ff2bea1f
 ```
 
 3. Depois de editar os arquivos 
