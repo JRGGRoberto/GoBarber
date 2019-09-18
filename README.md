@@ -2,17 +2,17 @@
 
 > Projeto em NodeJs, utilizando arquivos separados para organizar melhor o código 
 
-
-## Configurando estrutura
-
 ### Desenvolvido em: NodeJS
 
+## Configurando estrutura
 1. Executar os comandos
 
-  ```yarn init -y
+  ```
+  yarn init -y
 ```
 
-  ```yarn add express
+  ```
+  yarn add express
 ```
 
 2. Criar pasta e arquivos:
@@ -25,10 +25,42 @@
 
 3. Para executar:
  
-```node src/server.js
+ ```
+node src/server.js
 ```
 
- No browser:
+No browser:
 
-```http://localhost:3333
+ ```
+http://localhost:3333
+```
+
+## Nodemon &Sucrase
+1. Executar os comandos
+
+  ```
+  yarn add sucrase nodemon -D
+```
+2. Alterar a maneira do import
+
+ ```
+  const routes = require('./routes'); 
+```
+
+se torna
+
+  ```
+  import routes from './routes';
+```
+
+3. Depois de editar os arquivos 
+
+ [package.json](https://github.com/JRGGRoberto/GoBarber/blob/master/package.json)
+
+ [nodemon.json](https://github.com/JRGGRoberto/GoBarber/blob/master/nodemon.json)
+
+Para executar:
+
+  ```
+  yarn dev
 ```
