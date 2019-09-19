@@ -185,3 +185,5 @@ Testar e verficar no BD
   yarn sequelize db:migrate:undo
 ```
 
+## Criando loader de models
+
