@@ -187,3 +187,5 @@ Testar e verficar no BD
 
 ## Criando loader de models
 
+### Teste com os parâmetros no arquivo routes.js
+
