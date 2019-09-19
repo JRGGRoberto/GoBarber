@@ -189,3 +189,25 @@ Testar e verficar no BD
 
 ### Teste com os parâmetros no arquivo routes.js
 
+## Gerando hash da senha
+
+Instalar a extensão bcryptjs
+
+  ```
+  yarn add bcryptjs
+```
+Alterar o model/User.js
+
+Para testar enviar
+
+  ```
+  POST http://localhost:3333/users
+````
+
+    {
+	    "name": "Roberto",
+	    "email": "jrobert@xpto.com.br",
+	    "password": "123456"
+    }
+
+
