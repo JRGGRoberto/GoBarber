@@ -239,5 +239,34 @@ Para testar enviar
 
 ## Middleware de autenticação
 
+Para testar enviar
+
+  ```
+  UPDATE http://localhost:3333/users
+  No HEADER passar
+  req.headers.authorization = bearer + token
+````
+
+    {
+	    "email": "jrobert@xpto.com.br",
+	    "password": "123456"
+    }
+
 ## Update de usuário
 
+O update sempre o email e opicionais para serem alterado
+para trocar o password é necessário passar o OldPassword
+
+Para testar enviar
+
+  ```
+  UPDATE http://localhost:3333/users
+  No HEADER passar
+  req.headers.authorization = bearer + token
+````
+    {
+    	"name": "Roberto 7",
+    	"email": "jroberttt@xpto.com.br7",
+    	"oldPassword":"123454",
+    	"password": "1234541"
+    }
