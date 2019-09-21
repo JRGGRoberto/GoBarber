@@ -222,6 +222,7 @@ Criar arquivo app/controllers/SessionController.js
 Adicionar function checkPassword em /src/app/models/User.js
 
 Para gerar um hash do /src/config/auth.js
+
 [Md5Online.org]](https://www.md5online.org/)
 
 Para testar enviar
@@ -236,6 +237,5 @@ Para testar enviar
     }
 
 
-
-
+## Middleware de autenticação
 
