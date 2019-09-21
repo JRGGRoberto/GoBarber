@@ -1,6 +1,7 @@
 # Back-end do GoBarber
 
 > Projeto em NodeJs, utilizando arquivos separados para organizar melhor o código
+Todos os títulos abaixo possuem um commit
 
 ### Desenvolvido em: NodeJS
 
@@ -270,3 +271,26 @@ Para testar enviar
     	"oldPassword":"123454",
     	"password": "1234541"
     }
+
+
+## Validando dados de entrada
+
+A validação é utilizada no inicio de sessão, e nos controles do usuário
+
+Instalar a biblioteca Yup, ela realiza o *schema validation*
+  ```
+  yarn add yup
+```
+Yup não possui export default, então a importação não tem como ser
+
+    import yup from 'yup';
+
+e sim
+
+   import * from Yup from 'yup';
+
+
+
+
+
+
