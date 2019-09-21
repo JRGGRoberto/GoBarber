@@ -210,4 +210,32 @@ Para testar enviar
 	    "password": "123456"
     }
 
+## Autenticação JWT
+
+Instalar a extensão JSONWebToken
+
+  ```
+  yarn add jsonwebtoken
+```
+Criar arquivo app/controllers/SessionController.js
+
+Adicionar function checkPassword em /src/app/models/User.js
+
+Para gerar um hash do /src/config/auth.js
+[Md5Online.org]](https://www.md5online.org/)
+
+Para testar enviar
+
+  ```
+  POST http://localhost:3333/sessions
+````
+
+    {
+	    "email": "jrobert@xpto.com.br",
+	    "password": "123456"
+    }
+
+
+
+
 
