@@ -289,7 +289,27 @@ e sim
 
    import * from Yup from 'yup';
 
+# Continuando a APP v2.0
 
+## Configurando Multer
+
+Instalar a biblioteca
+  ```
+  yarn add multer
+```
+Adicionado a rota files em src/routes.js
+Acicionaod o arquivo src/config/multerjs
+
+Para testar :
+Depois de criar uma sessão, copiar o token
+
+UPDATE http://localhost:3333/files
+  Multipart
+  file : arquivo
+  Autentication: Bearer : token
+
+O arquivo será copiado para
+ tmp/uploads
 
 
 
