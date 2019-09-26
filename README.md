@@ -332,7 +332,13 @@ app.js add this to
     }
 To show image in browser
 
-
 GET http://localhost:3333/providers
-  Autentication: Bearer : tokeb
-  
+  Autentication: Bearer : token
+
+## Migration e model de agendamento
+*
+    yarn sequelize migration:create --name=create-appointments
+modified:   src/database/index.js
+Criados
+ * src/app/models/Appointment.js
+ * src/database/migrations/20190926190352-create-appointments.js
