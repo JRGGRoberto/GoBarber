@@ -316,10 +316,12 @@ O arquivo será copiado para
 * Migration File
 * Migration avatar-field-to-user
 
+
 UPDATE http://localhost:3333/user
   Multipart
   Autentication: Bearer : token
-{
-	"email": "joaopaulo@gmail.co",
-	"avatar_id": "1"
-}
+
+    {
+	    "email": "joaopaulo@gmail.co",
+	    "avatar_id": "1"
+    }
