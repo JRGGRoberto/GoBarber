@@ -303,7 +303,7 @@ Acicionaod o arquivo src/config/multerjs
 Para testar :
 Depois de criar uma sessão, copiar o token
 
-UPDATE http://localhost:3333/files
+POST http://localhost:3333/files
   Multipart
   file : arquivo
   Autentication: Bearer : token
@@ -311,6 +311,15 @@ UPDATE http://localhost:3333/files
 O arquivo será copiado para
  tmp/uploads
 
+## Avatar do usuário
 
+* Migration File
+* Migration avatar-field-to-user
 
-
+UPDATE http://localhost:3333/user
+  Multipart
+  Autentication: Bearer : token
+{
+	"email": "joaopaulo@gmail.co",
+	"avatar_id": "1"
+}
