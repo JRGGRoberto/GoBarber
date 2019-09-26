@@ -316,12 +316,23 @@ O arquivo será copiado para
 * Migration File
 * Migration avatar-field-to-user
 
+## Listagem de prestadores de serviço
 
-UPDATE http://localhost:3333/user
-  Multipart
-  Autentication: Bearer : token
+Lista todos os prestadores de serviço junto com informação do avatar
+INDEX / GET
 
-    {
-	    "email": "joaopaulo@gmail.co",
-	    "avatar_id": "1"
+ProviderController.js
+app.js add this to 
+    middlewares() {
+        this.server.use(express.json());
+        this.server.use(
+          '/files',
+          express.static(path.resolve(__dirname, '..', 'tmp', 'uploads'))
+        );
     }
+To show image in browser
+
+
+GET http://localhost:3333/providers
+  Autentication: Bearer : tokeb
+  
