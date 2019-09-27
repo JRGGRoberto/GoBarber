@@ -342,3 +342,19 @@ modified:   src/database/index.js
 Criados
  * src/app/models/Appointment.js
  * src/database/migrations/20190926190352-create-appointments.js
+
+## Agendamento de serviço
+
+POST http://localhost:3333/appointments
+  Autentication: Bearer : token de um user não provider
+  
+  JSON
+   {
+      "provider_id: 2,      onde 2 é um id de um provider
+      "date": "2019-09-26 18:00:00"
+   }
+
+
+
+
+

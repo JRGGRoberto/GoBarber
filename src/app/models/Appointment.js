@@ -20,4 +20,4 @@ class Appointment extends Model {
   }
 }
 
-export default new Appointment();
+export default Appointment;
