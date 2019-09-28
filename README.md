@@ -322,7 +322,7 @@ Lista todos os prestadores de serviço junto com informação do avatar
 INDEX / GET
 
 ProviderController.js
-app.js add this to 
+app.js add this to
     middlewares() {
         this.server.use(express.json());
         this.server.use(
@@ -347,7 +347,7 @@ Criados
 
 POST http://localhost:3333/appointments
   Autentication: Bearer : token de um user não provider
-  
+
   JSON
    {
       "provider_id: 2,      onde 2 é um id de um provider
@@ -355,6 +355,17 @@ POST http://localhost:3333/appointments
    }
 
 
+## Validações de agendamento
 
+Instalar a biblioteca para trabalhar com datas
+  ```
+  yarn add date-fns@next
+```
+
+## Listando agendamentos do usuário
+
+Criar GET /appointments
+
+routes.get('/appointments', AppointmentController.index);
 
 
