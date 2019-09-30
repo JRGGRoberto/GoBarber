@@ -375,3 +375,11 @@ Alterar o a requisição add as informações a baixo na aba Query
     page 1
 
 E alterar AppointmentController.js
+
+
+## Listando agenda do prestador
+
+Adicionar a rota
+schedule
+
+E passar a query da data
