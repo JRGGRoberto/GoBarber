@@ -383,3 +383,25 @@ Adicionar a rota
 schedule
 
 E passar a query da data
+
+
+## Instalando e configurando MongoDB via Docker
+
+Instalando uma imagem:
+
+    docker run --name mongobarber -p 27017:27017 -d -t mongo
+
+Para testar: ir no browser acessar:
+
+    localhost:27017
+
+Deve aparecer uma mensagem:
+
+*It looks lik you trying to access MongoDB over HTTP on the native driver port.*
+
+Para a aplicação poder se conectar ao MongoDB, é necessário instlar:
+
+    yarn add mongoose
+
+Como a conexão sugerida estava depreciada, tive que adicionar useUnifiedTopology: true,
+no parametro de conexão
