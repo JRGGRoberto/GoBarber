@@ -405,3 +405,7 @@ Para a aplicação poder se conectar ao MongoDB, é necessário instlar:
 
 Como a conexão sugerida estava depreciada, tive que adicionar useUnifiedTopology: true,
 no parametro de conexão
+
+## Notificando novos agendamentos
+
+Instlar o *MongoDB Compass Community* para verifiar os dados
