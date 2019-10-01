@@ -411,4 +411,13 @@ no parametro de conexão
 
 ## Notificando novos agendamentos
 
-Instlar o *MongoDB Compass Community* para verifiar os dados
+Instalar o *MongoDB Compass Community* para verifiar os dados
+
+<<<<<<< HEAD
+A parte do banco MongoDB fica em src/shemas/Notification.js
+
+## Listando notificações do usuário
+
+rota Index /notifications
+=======
+>>>>>>> 5ae0514d408306809a533d0e29ce3b30c0bf9431
