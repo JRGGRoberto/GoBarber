@@ -377,6 +377,7 @@ Alterar o a requisição add as informações a baixo na aba Query
     page 1
 
 E alterar AppointmentController.js
+<<<<<<< HEAD
 
 
 ## Listando agenda do prestador
@@ -411,3 +412,5 @@ no parametro de conexão
 ## Notificando novos agendamentos
 
 Instlar o *MongoDB Compass Community* para verifiar os dados
+=======
+>>>>>>> parent of d745e1a... feat: Listando agenda do prestador
