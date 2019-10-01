@@ -411,5 +411,5 @@ no parametro de conexão
 
 ## Notificando novos agendamentos
 
-Instlar o *MongoDB Compass Community* para verifiar os dados
+Instalar o *MongoDB Compass Community* para verifiar os dados
 
