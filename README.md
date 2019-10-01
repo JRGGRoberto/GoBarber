@@ -412,5 +412,3 @@ no parametro de conexão
 ## Notificando novos agendamentos
 
 Instlar o *MongoDB Compass Community* para verifiar os dados
-=======
->>>>>>> parent of d745e1a... feat: Listando agenda do prestador

@@ -1,21 +1,22 @@
 import * as Yup from 'yup';
-import { startOfHour, parseISO, isBefore } from 'date-fns';
-// import pt from 'date-fns/locale/pt';
+import { startOfHour, parseISO, isBefore, format } from 'date-fns';
+import pt from 'date-fns/locale/pt';
 import User from '../models/User';
 import File from '../models/File';
 import Appointment from '../models/Appointment';
-// import Notification from '../schemas/Notification';
+import Notification from '../schemas/Notification';
 
 class AppointmentController {
   async index(req, res) {
     const { page = 1 } = req.query;
+    const limtpage = 20;
 
     const appointments = await Appointment.findAll({
       where: { user_id: req.userId, canceled_at: null },
       order: ['date'],
       attributes: ['id', 'date'],
-      limit: 10,
-      offset: (page - 1) * 10,
+      limit: limtpage,
+      offset: (page - 1) * limtpage,
       include: [
         {
           model: User,
@@ -46,11 +47,10 @@ class AppointmentController {
     }
 
     const { provider_id, date } = req.body;
-
+    // console.log(req.body);
     /**
      * Check if provider_id is provider
      */
-
     const isProvider = await User.findOne({
       where: { id: provider_id, provider: true },
     });
@@ -104,18 +104,18 @@ class AppointmentController {
 
     /**
      * Nofify appointment provider
-
+     */
     const user = await User.findByPk(req.userId);
     const formattedDate = format(
       hourStart,
-      "'dia' dd  'de' MMMM', às ' H:mm'h'"
+      "'dia' dd  'de' MMMM', às' H:mm'h'",
+      { locale: pt }
     );
-
     await Notification.create({
       content: `Novo agendamento de ${user.name}, para o ${formattedDate}`,
       user: provider_id,
     });
-*/
+
     return res.json(appointment);
   }
 }
