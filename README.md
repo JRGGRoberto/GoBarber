@@ -293,6 +293,8 @@ e sim
 
 ## Configurando Multer
 
+Para guardar arquivos e resolver diretórios (Win/UNIX)
+
 Instalar a biblioteca
   ```
   yarn add multer

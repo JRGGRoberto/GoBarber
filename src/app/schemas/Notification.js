@@ -20,4 +20,5 @@ const NotificationsSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
 export default mongoose.model('Notification', NotificationsSchema);

@@ -4,7 +4,7 @@ import pt from 'date-fns/locale/pt-BR';
 import User from '../models/User';
 import File from '../models/File';
 import Appointment from '../models/Appointment';
-import Notification from '../schemas/Notifications';
+import Notification from '../schemas/Notification';
 
 class AppointmentController {
   async index(req, res) {
@@ -36,16 +36,17 @@ class AppointmentController {
   }
 
   async store(req, res) {
-    const shcema = Yup.object().shape({
+    const schema = Yup.object().shape({
       provider_id: Yup.number().required(),
       date: Yup.date().required(),
     });
 
-    if (!(await shcema.isValid(req.body))) {
-      return res.status(400).json({ error: 'Validation fails' });
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Validation fails - schema' });
     }
 
     const { provider_id, date } = req.body;
+
     /**
      * Check if provider_id is provider
      */
@@ -58,6 +59,15 @@ class AppointmentController {
       return res
         .status(401)
         .json({ error: 'You can only create appointment with providers' });
+    }
+
+    /**
+     * Check if provider create an appointment with yourself
+     */
+    if (provider_id === req.userId) {
+      return res
+        .status(401)
+        .json({ error: 'You cannot create an appointment with yourself' });
     }
 
     /**
