@@ -377,8 +377,6 @@ Alterar o a requisição add as informações a baixo na aba Query
     page 1
 
 E alterar AppointmentController.js
-<<<<<<< HEAD
-
 
 ## Listando agenda do prestador
 
@@ -386,7 +384,6 @@ Adicionar a rota
 schedule
 
 E passar a query da data
-
 
 ## Instalando e configurando MongoDB via Docker
 
@@ -413,3 +410,8 @@ no parametro de conexão
 
 Instalar o *MongoDB Compass Community* para verifiar os dados
 
+A parte do banco MongoDB fica em src/shemas/Notification.js
+
+## Listando notificações do usuário
+
+rota Index /notifications
