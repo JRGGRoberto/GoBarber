@@ -29,7 +29,7 @@ class NotificationController {
     const notification = await Notification.findByIdAndUpdate(
       req.params.id,
       { read: true },
-      { new: true }
+      { new: true } // retorna registro, se não colocar essa linha ele atualiza o registro mas não retorna  informação
     );
 
     return res.json(notification);

@@ -417,3 +417,11 @@ A parte do banco MongoDB fica em src/shemas/Notification.js
 
 rota Index /notifications
 
+## Marcar notificações como lida
+
+Criar a rota
+
+{{ base_url  }}/notifications/<id do MongoDB>
+
+## Cancelamento de agendamento
+
