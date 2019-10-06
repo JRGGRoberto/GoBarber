@@ -425,3 +425,27 @@ Criar a rota
 
 ## Cancelamento de agendamento
 
+Add rota :
+
+/appointments/:id', AppointmentController.delete
+
+## Configuranaod Nodemailer
+
+Quando houver um cancelamento, o provider receberar um e-mail
+
+Add biblioteca
+
+    ´´´
+       yarn add nodemailer
+    ´´´
+
+Necessário usar um serviço de e-mail:
+ * Amazon SES
+ * Mailgun
+ * Sparkpost
+ * Mandril (Mailchimp)
+ * GMail
+ * Mailtrap (apenas em DEV) mailtrap.io
+
+Pasta de lib criada, Mail.js dentro de lib
+mail.js dentro de config
