@@ -519,3 +519,9 @@ Para isso, no package.json adicionar no script
 Para executar
 
    yarn queue
+
+## Monitorando falhas da fila
+Imprime no console.log mensagem de erro quando ocorre erro na fila.
+
+
+
