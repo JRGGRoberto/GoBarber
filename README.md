@@ -458,3 +458,27 @@ Arquivos e pastas criadas
 │       └── Mail.js
 .
 ```
+
+## Configurando templates de e-mail
+
+Adicionar as bibliotecas:
+
+   yarn add express-handlebars nodemailer-express-handlebars
+
+https://handlebarsjs.com/
+
+Arquivos e pastas criadas
+
+```bash
+.
+├── src
+│   ├── views
+│   │   └── emails
+│   │       ├── layouts
+│   │       │   └── default.hbs
+│   │       ├── partials
+│   │       │   └── footer.hbs
+│   │       └── emails
+.   .
+```
+change file: src/app/controllers/AppointmentController.js
