@@ -447,5 +447,13 @@ Necessário usar um serviço de e-mail:
  * GMail
  * Mailtrap (apenas em DEV) mailtrap.io
 
-Pasta de lib criada, Mail.js dentro de lib
-mail.js dentro de config
+Arquivos e pastas criadas
+
+´´´
+.
+├── src
+│   ├── config
+│   │   └── mail.js
+│   └── lib
+│       └── Mail.js
+.
