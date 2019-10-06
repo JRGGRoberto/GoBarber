@@ -435,7 +435,7 @@ Quando houver um cancelamento, o provider receberar um e-mail
 
 Add biblioteca
 
-    ´´´
+    ```
        yarn add nodemailer
     ´´´
 
