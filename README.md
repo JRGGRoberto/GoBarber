@@ -516,6 +516,6 @@ Para isso, no package.json adicionar no script
 
     "queue": "nodemon src/queue.js"
 
-para executar
+Para executar
 
    yarn queue
