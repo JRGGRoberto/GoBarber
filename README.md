@@ -449,7 +449,7 @@ Necessário usar um serviço de e-mail:
 
 Arquivos e pastas criadas
 
-´´´
+```bash
 .
 ├── src
 │   ├── config
@@ -457,3 +457,28 @@ Arquivos e pastas criadas
 │   └── lib
 │       └── Mail.js
 .
+```
+
+## Configurando templates de e-mail
+
+Adicionar as bibliotecas:
+
+   yarn add express-handlebars nodemailer-express-handlebars
+
+https://handlebarsjs.com/
+
+Arquivos e pastas criadas
+
+```bash
+.
+├── src
+│   ├── views
+│   │   └── emails
+│   │       ├── layouts
+│   │       │   └── default.hbs
+│   │       ├── partials
+│   │       │   └── footer.hbs
+│   │       └── emails
+.   .
+```
+change file: src/app/controllers/AppointmentController.js
