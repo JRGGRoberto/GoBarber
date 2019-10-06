@@ -471,14 +471,51 @@ Arquivos e pastas criadas
 
 ```bash
 .
-├── src
-│   ├── views
-│   │   └── emails
-│   │       ├── layouts
-│   │       │   └── default.hbs
-│   │       ├── partials
-│   │       │   └── footer.hbs
-│   │       └── emails
-.   .
+src
+├── views
+│   └── emails
+│       ├── layouts
+│       │   └── default.hbs
+│       ├── partials
+│       │   └── footer.hbs
+│       └── emails
+.
 ```
 change file: src/app/controllers/AppointmentController.js
+
+## Configurando fila com Redis
+
+O envio de email faz demorar a resposta, com isso será implementado uma funcionalidade background para gerir isto.
+
+Add Docker image Redis - BD altamente performático
+
+   docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+Instalar o Bee-Queue - Gerenciador de filas
+https://github.com/bee-queue/bee-queue
+
+   yard add bee-queue
+
+Arquivos e pastas criadas
+
+```bash
+.
+src
+├── app
+│   └── jobs
+│       └── CancellationMail.js
+├── config
+│   └── redis.js
+├── lib
+│   └── Queue.js
+├── queue.js <==
+.
+```
+O arquivo queue.js <== irá rodar de maneira independente.
+Para isso, no package.json adicionar no script
+
+    "queue": "nodemon src/queue.js"
+
+para executar
+
+   yarn queue
