@@ -435,7 +435,7 @@ Quando houver um cancelamento, o provider receberar um e-mail
 
 Add biblioteca
 
-    ´´´
+    ```
        yarn add nodemailer
     ´´´
 
@@ -449,7 +449,7 @@ Necessário usar um serviço de e-mail:
 
 Arquivos e pastas criadas
 
-´´´
+```bash
 .
 ├── src
 │   ├── config
@@ -457,3 +457,4 @@ Arquivos e pastas criadas
 │   └── lib
 │       └── Mail.js
 .
+```
