@@ -523,5 +523,8 @@ Para executar
 ## Monitorando falhas da fila
 Imprime no console.log mensagem de erro quando ocorre erro na fila.
 
+## Listando horários disponíveis
 
-
+Nova rota
+server/providers/:providerId/available
+Passando o token
