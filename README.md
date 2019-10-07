@@ -528,9 +528,32 @@ Imprime no console.log mensagem de erro quando ocorre erro na fila.
 Nova rota
 server/providers/:providerId/available
 Passando o token
+E na Query
+date e resultado de new Date().getTime() ex. 1570455291115
+
+
+| Name         | Value             |
+| -------------| ----------------- |
+| date         | 1570455291115     |
+
+
 
 ## Campos virtuais no agendamento
 
 Listar as seguintes informações:
 * Se é possível cancelar um agendamento
 * Se o agendamento já passou
+
+## Tratamento de exceções
+
+Ferramentas de monitoração de erros
+https://sentry.io > dá para integrar com Slack, Git para criar insues, bom para trabalhar em produção
+https://www.bugsnag.com/
+
+   yarn add @sentry/node@5.6.2
+
+   yarn add express-async-errors
+
+Para melhor tratar os erros:
+
+   yarn add youch
