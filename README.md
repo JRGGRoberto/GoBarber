@@ -528,3 +528,9 @@ Imprime no console.log mensagem de erro quando ocorre erro na fila.
 Nova rota
 server/providers/:providerId/available
 Passando o token
+
+## Campos virtuais no agendamento
+
+Listar as seguintes informações:
+* Se é possível cancelar um agendamento
+* Se o agendamento já passou
