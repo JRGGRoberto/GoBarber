@@ -557,3 +557,9 @@ https://www.bugsnag.com/
 Para melhor tratar os erros:
 
    yarn add youch
+
+## Variáveis de ambiente
+
+Criar o arquivo .env na raiz do projeto
+
+   yarn add dotenv
